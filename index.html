@@ -686,17 +686,17 @@
                 <div class="event-detail">
                     <i class="fas fa-calendar-alt"></i>
                     <h3>Data</h3>
-                    <p>Em breve</p>
+                    <p>14 de Setembro de 2025</p>
                 </div>
                 <div class="event-detail">
                     <i class="fas fa-clock"></i>
-                    <h3>Horário</h3>
-                    <p>A definir</p>
+                    <h3>15h30</h3>
+                    <p></p>
                 </div>
                 <div class="event-detail">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Local</h3>
-                    <p>A definir</p>
+                    <p>Centro Educacional Amadeus, Av. Benedito Santana, 9, Conj. Amarante, SGA - RN.</p>
                 </div>
             </div>
             
@@ -717,7 +717,7 @@
                             <span class="price-value-small">R$ 20,00</span>
                         </div>
                     </div>
-                    <p>Participe dessa deliciosa noite musical e ajude na construção da nossa sede.</p>
+                    <p></p>
                 </div>
             </div>
         </section>
@@ -1031,7 +1031,7 @@
           submitBtn.disabled = true;
           submitBtn.textContent = 'Processando...';
 
-          fetch('https://n8n.escolaamadeus.com/webhook-test/evento-chocolatemusical', {
+          fetch('https://webhook.escolaamadeus.com/webhook/evento-chocolatemusical', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)
